@@ -22,10 +22,15 @@ Personal repository for learning Laravel framework.
     ```bash
     composer global require laravel/installer
     ```
-+ To create a new project, [^1]
++ To create a new project[^1], 
     ```bash
     laravel new your-app-name
     ```
+     or
+    ```
+    composer create-project laravel/laravel my_first_app
+    ```
+    where the last three mean: `organizationName/projectName folderName` [^2]
     
 + To start the app, change directory to your app folder then run
     ```bash
@@ -46,11 +51,7 @@ Personal repository for learning Laravel framework.
     ```bash
     npm install
     ```
-+ To create an empty canvas, fresh boiler plate laravel project do: 
-    ```
-    composer create-project laravel/laravel my_first_app
-    ```
-    where the last three mean: `organizationName/projectName folderName`
+
 
 
 <br><br>
@@ -66,4 +67,6 @@ Personal repository for learning Laravel framework.
 
 + 
 
-[^1]: `composer create-project laravel/laravel my_first_app`: This command uses Composer, a dependency management tool for PHP, to create a new Laravel project. It downloads the Laravel framework files and installs all the necessary dependencies defined in the composer.json file. It also allows you to specify the version of Laravel you want to install. For example, you can run `composer create-project laravel/laravel my_first_app --prefer-dist "8.*` to create a Laravel 8 application. This command gives you more control over the installation process and allows you to customize the project setup. `laravel new my_first_app`: This command is a shorthand provided by the Laravel installer, a globally installed Composer package. It simplifies the process of creating a new Laravel application by automatically downloading the latest version of Laravel and setting up a basic project structure. It is a convenient way to quickly create a new Laravel project without having to run the composer create-project command explicitly.
+[^1]: `composer create-project laravel/laravel my_first_app`: This command uses Composer, a dependency management tool for PHP, to create a new Laravel project. It downloads the Laravel framework files and installs all the necessary dependencies defined in the composer.json file. It also allows you to specify the version of Laravel you want to install. For example, you can run `composer create-project laravel/laravel my_first_app --prefer-dist "8.*` to create a Laravel 8 application. This command gives you more control over the installation process and allows you to customize the project setup. 
+
+[^2]: `laravel new my_first_app`: This command is a shorthand provided by the Laravel installer, a globally installed Composer package. It simplifies the process of creating a new Laravel application by automatically downloading the latest version of Laravel and setting up a basic project structure. It is a convenient way to quickly create a new Laravel project without having to run the composer create-project command explicitly.
