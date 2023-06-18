@@ -1,5 +1,8 @@
 <?php
 
+require __DIR__ . '/vendor/autoload.php';
+use Cocur\Slugify\Slugify;
+
 $sum = 2 + 2;
 
 $string = 'Hello World';
@@ -27,3 +30,4 @@ if ($num > 75) {
 
 #starting
 #php -S localhost:8000
+
