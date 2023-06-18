@@ -40,8 +40,20 @@ Personal repository for learning Laravel framework.
     composer require laravel/ui --dev
     php artisan ui:auth
     ```
+
++ Install other dependencies by
+    ```bash
+    npm install
+    ```
++ 
+
 <br><br>
 
 # NOTES
 
 + views should be primarily composed of html markup. Avoid computations or databse fetches - should be reserved for controllers.
+
++ ***MVC*** - Model View Controller.
+    - **Model** -  Data 
+    - **View** - (frontend) What end-users see in HTML. powered bt blade templates that combine php and html.
+    - **Controller** -  Router and Controllers is how the users interact with the model. PHP class containing a variety of methods like *show*, *update*, *edit*, and *destroy*. 
