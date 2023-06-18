@@ -3,6 +3,12 @@
 require __DIR__ . '/vendor/autoload.php';
 use Cocur\Slugify\Slugify;
 
+$slugify = new Slugify();
+echo $slugify->slugify('Roses are red, violets are blue');
+
+#creates a url-friendly string using a package.
+#No special characters or whitespaces.
+
 $sum = 2 + 2;
 
 $string = 'Hello World';
