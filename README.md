@@ -6,7 +6,7 @@ Personal repository for learning Laravel framework.
 <br>
 
 # SETUP
-+ INSTALLATION. Make sure to have [Composer](https://getcomposer.org/download/), [Xampp](https://www.apachefriends.org/), [Nodejs](https://nodejs.org/en) and [VSCode](https://code.visualstudio.com/download) installed.
++ INSTALLATION. Make sure to have [Composer](https://getcomposer.org/download/), [Xampp](https://www.apachefriends.org/), [Nodejs](https://nodejs.org/en) and a file editor *(I use [VSCode](https://code.visualstudio.com/download))* installed.
 
 + To check if **Composer** is installed correctly, entering the following to the terminal should list all the available commands and the composer version. **Composer** is a dependency manager for php.
     ```bash
