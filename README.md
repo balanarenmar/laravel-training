@@ -55,10 +55,16 @@ Personal repository for learning Laravel framework.
 
 + To make sure your databse have the necessary tables for laravel, run the command `php artisan migrate`. Your database should now have the tables failed_jobs, migrations, password_resets, personal_access_tokens, and **users**.
 
++ How Laravel creates tables: in `database/migrations`. To create a new migration file that creates the table, run `php artisan make:migration create_posts_table`. Edit the up function that determines the shape of the schema to include the necessary data. then run `php artisan migrate` in the terminal to run migrations that have not yet ben run.
+
++ When creating your own model for a controller, make sure the model name is in singular-upper case form; example we created a migration file for *"posts"* that created a *"posts"* table in our db, we need to make a model named **"Post"**. Inside `app/Models`, you should have a new php model file.
+
 
 <br><br>
 
 # NOTES
+
++ I am following [this Youtube Video](https://www.youtube.com/watch?v=cDEVWbz2PpQ&t=631s).
 
 + views should be primarily composed of html markup. Avoid computations or databse fetches - should be reserved for controllers.
 
@@ -73,7 +79,11 @@ Personal repository for learning Laravel framework.
 
 + Make sure to organize your code. Controller files should exclusively hold all functions. `app/Http/Controllers` holds all the controllers. To create a new controller file through the terminal type in `php artisan make:controller ControllerName`.
 
-+ I am following [this Youtube Video](https://www.youtube.com/watch?v=cDEVWbz2PpQ&t=631s).
++ All tasks should have a separate controller
+
++ What is a model: 
+
+
 
 
 
