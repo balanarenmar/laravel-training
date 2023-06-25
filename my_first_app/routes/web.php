@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 //make sure to import the UserController class at the top!
 Route::post('/register', [UserController::class, 'register']);
+Route::post('/logout', [UserController::class, 'logout']);
+Route::post('/login', [UserController::class, 'login']);

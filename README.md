@@ -51,7 +51,9 @@ Personal repository for learning Laravel framework.
     ```bash
     npm install
     ```
++ To connect your mysql database, edit the `.env` file accordingly. change the DB_DATABASE to the name of your database, and set DB_USERNAME and DB_PASSWORD as well.
 
++ To make sure your databse have the necessary tables for laravel, run the command `php artisan migrate`. Your database should now have the tables failed_jobs, migrations, password_resets, personal_access_tokens, and **users**.
 
 
 <br><br>
@@ -72,6 +74,8 @@ Personal repository for learning Laravel framework.
 + Make sure to organize your code. Controller files should exclusively hold all functions. `app/Http/Controllers` holds all the controllers. To create a new controller file through the terminal type in `php artisan make:controller ControllerName`.
 
 + I am following [this Youtube Video](https://www.youtube.com/watch?v=cDEVWbz2PpQ&t=631s).
+
+
 
 
 ---------
