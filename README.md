@@ -65,7 +65,16 @@ Personal repository for learning Laravel framework.
     - **View** - (frontend) What end-users see in HTML. powered by blade templates that combine php and html.
     - **Controller** -  Router and Controllers is how the users interact with the model. PHP class containing a variety of methods like *show*, *update*, *edit*, and *destroy*. 
 
-+ 
++ Inside `resources/routes/web.php`, controls and determines what happens for different url patterns.
+
++ Make sure to include `@csrf` in form submissions. This token is used to verify that the authenticated user is the person actually making the requests to the application.
+
++ Make sure to organize your code. Controller files should exclusively hold all functions. `app/Http/Controllers` holds all the controllers. To create a new controller file through the terminal type in `php artisan make:controller ControllerName`.
+
++ I am following [this Youtube Video](https://www.youtube.com/watch?v=cDEVWbz2PpQ&t=631s).
+
+
+---------
 
 [^1]: `composer create-project laravel/laravel my_first_app`: This command uses Composer, a dependency management tool for PHP, to create a new Laravel project. It downloads the Laravel framework files and installs all the necessary dependencies defined in the composer.json file. It also allows you to specify the version of Laravel you want to install. For example, you can run `composer create-project laravel/laravel my_first_app --prefer-dist "8.*` to create a Laravel 8 application. This command gives you more control over the installation process and allows you to customize the project setup. 
 
