@@ -62,14 +62,23 @@ Personal repository for learning Laravel framework.
 + To make sure your database have the necessary tables for laravel, run the command `php artisan migrate`. Your database should now have the tables failed_jobs, migrations, password_resets, personal_access_tokens, and **users**.
 
 
++ When adding a new view, first create the route that will handle the redirect inside `web.php`. Then, make sure to have a designated Controller for that particalar operation. If not yet present make the controller by:. `php artisan make:controller ControllerName`. 
+
++ `php artisan make:factory BlogFactory`, then edit the Seeder file to include 
+
++ `php artisan make:model ModelName` To create a php model file.
 
 + Make sure to organize your code. Controller files should exclusively hold all functions. `app/Http/Controllers` holds all the controllers. To create a new controller file through the terminal type in `php artisan make:controller ControllerName`.
 
-+ All tasks should have a separate controller
++ All tasks should have a separate controller 
 
 + When creating your own model for a controller, make sure the model name is in **singular**-**upper case** form; example we created a migration file for *"posts"* that created a *"posts"* table in our db, we need to make a model named **"Post"**. Inside `app/Models`, you should have a new php model file.
 
 + Remember to import your models in `web.php` to be able to use 
+
++ SEEDERS. To populate your database tables automatically, `php artisan db:seed`. Uncomment line 17 in DatabaseSeeder file. But first make sure to edit the factory code, 
+
++ `php artisan migrate:refresh` refreshes the migration
 
 <br><br>
 
@@ -90,9 +99,6 @@ Personal repository for learning Laravel framework.
 
 + What is a model: 
 
-+ When adding a new view, first create the route that will handle the redirect inside `web.php`. Then, make sure to have a designated Controller for that particalar operation. If not yet present make the controller by:. `php artisan make:controller ControllerName`. 
-
-+ `php artisan make:model ModelName`
 
 
 ---------
