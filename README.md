@@ -51,14 +51,25 @@ Personal repository for learning Laravel framework.
     ```bash
     npm install
     ```
-+ To connect your mysql database, edit the `.env` file accordingly. change the DB_DATABASE to the name of your database, and set DB_USERNAME and DB_PASSWORD as well.
 
-+ To make sure your databse have the necessary tables for laravel, run the command `php artisan migrate`. Your database should now have the tables failed_jobs, migrations, password_resets, personal_access_tokens, and **users**.
++ Make sure to create the database with the correct name in your dm manager. in my case, mysql.
+
+
++ To connect your mysql database, edit the `.env` file accordingly. change the DB_DATABASE to the name of your database, and set DB_USERNAME and DB_PASSWORD as well.
 
 + How Laravel creates tables: in `database/migrations`. To create a new migration file that creates the table, run `php artisan make:migration create_posts_table`. Edit the up function that determines the shape of the schema to include the necessary data. then run `php artisan migrate` in the terminal to run migrations that have not yet ben run.
 
-+ When creating your own model for a controller, make sure the model name is in singular-upper case form; example we created a migration file for *"posts"* that created a *"posts"* table in our db, we need to make a model named **"Post"**. Inside `app/Models`, you should have a new php model file.
++ To make sure your database have the necessary tables for laravel, run the command `php artisan migrate`. Your database should now have the tables failed_jobs, migrations, password_resets, personal_access_tokens, and **users**.
 
+
+
++ Make sure to organize your code. Controller files should exclusively hold all functions. `app/Http/Controllers` holds all the controllers. To create a new controller file through the terminal type in `php artisan make:controller ControllerName`.
+
++ All tasks should have a separate controller
+
++ When creating your own model for a controller, make sure the model name is in **singular**-**upper case** form; example we created a migration file for *"posts"* that created a *"posts"* table in our db, we need to make a model named **"Post"**. Inside `app/Models`, you should have a new php model file.
+
++ Remember to import your models in `web.php` to be able to use 
 
 <br><br>
 
@@ -77,15 +88,11 @@ Personal repository for learning Laravel framework.
 
 + Make sure to include `@csrf` in form submissions. This token is used to verify that the authenticated user is the person actually making the requests to the application.
 
-+ Make sure to organize your code. Controller files should exclusively hold all functions. `app/Http/Controllers` holds all the controllers. To create a new controller file through the terminal type in `php artisan make:controller ControllerName`.
-
-+ All tasks should have a separate controller
-
 + What is a model: 
 
++ When adding a new view, first create the route that will handle the redirect inside `web.php`. Then, make sure to have a designated Controller for that particalar operation. If not yet present make the controller by:. `php artisan make:controller ControllerName`. 
 
-
-
++ `php artisan make:model ModelName`
 
 
 ---------

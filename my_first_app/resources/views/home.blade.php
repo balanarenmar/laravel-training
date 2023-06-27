@@ -40,6 +40,10 @@
             @endforeach
         </div>
 
+        <div style="border: 3px solid red;">
+            <button><a href="/add-student/">ADD STUDENT</a></button>
+        </div>
+
     @else
         <!--If user is NOT logged in-->
         <div style="border: 3px solid black;">
