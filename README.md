@@ -100,6 +100,16 @@ Personal repository for learning Laravel framework.
 + What is a model: 
 
 
+------
+
+- To install bootstrap in laravel:
+    ```
+    composer require laravel/ui
+    php artisan ui bootstrap
+    ```
+    npm install bootstrap
+
+
 
 ---------
 
