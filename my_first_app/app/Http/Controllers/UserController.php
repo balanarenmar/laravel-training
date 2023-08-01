@@ -19,7 +19,8 @@ class UserController extends Controller
         if (auth()->attempt([
             'name' => $incomingFields['loginname'],
             'password' => $incomingFields['loginpassword']])) {
-            $request->session()->regenerate();
+            $test = $request->session()->regenerate();
+            dd($test);
         }
 
         return redirect('/');
@@ -48,8 +49,8 @@ class UserController extends Controller
         //Laravel default User Model
         $user = User::create($incomingFields);
 
-        auth()->login($user);
-
+        $test = auth()->login($user);
+        //dd($test);
         //return 'Hello from the controller';
 
         //redirect to main
